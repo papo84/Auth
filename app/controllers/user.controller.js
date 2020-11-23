@@ -1,5 +1,10 @@
+const path = require('path');
+
 exports.allAccess = (req, res) => {
-    res.status(200).send("Public Content.");
+    res.set('Content-Type', 'text/html')
+    res.status(200).sendFile(path.join(__dirname, '../views/pages', 'public.html'));
+    // res.status(200).send(Buffer.from('<p>papo\'s domain</p>'))
+    // res.status(200).send("Public Content.");
   };
   
   exports.userBoard = (req, res) => {

@@ -9,9 +9,10 @@ lerna-debug.log*
 .vscode*
 # Dependency directories
 node_modules/
-
+*node_modules/*
 # DynamoDB Local files
 .dynamodb/
 
 app/config/auth.config.js
 app/config/db.config.js
+react-home/build.sh
